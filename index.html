@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library_System</title>
+    <link rel="icon" href="https://i.pinimg.com/736x/21/75/dd/2175dd8fe99a9fa0a9b8db2c5692e133--emoji-reading.jpg">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ruda&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="library">
+           <h1 class="h">Library System</h1>
+        </div>
+        <div class="nav">
+              <ul>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#Logout">Logout</a></li>
+              </ul>
+        </div>
+    </header>
+    <main>
+        <div class="table">
+            
+           <table >
+            <h1 class="h2">Books</h1>
+             <thead>
+                <tr>
+                    <th>Book ID</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Genre</th>
+                    <th>Availability</th>
+                </tr>
+             </thead>
+             <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <div class="author">
+                          <a href="https://www.thegreatestbooks.org/items/190">Don Quixote</a>
+                        </div>
+                         <br>
+                        <table >
+                            <tr><td>Publication Date: 1605</td></tr>
+                            <tr><td>page count: 863</td></tr>
+                            <tr><td>ISBN: PQ6323</td></tr>
+                        </table>
+                    </td>
+                    <td>Miguel de Cervantes</td>
+                    <td>Novel</td>
+                    <td>Not Available</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>
+                       <div class="author">
+                         <a href="https://en.wikipedia.org/wiki/The_Great_Gatsby">The Great Gatsby</a>
+                       </div>
+                        <br>
+                        <table >
+                            <tr><td>Publication Date:1925</td></tr>
+                            <tr><td>page count: 511</td></tr>
+                            <tr><td>ISBN: 156Q-8263256</td></tr>
+                        </table>
+                        
+                    </td>
+                    <td>F. Scott Fitzgerald</td>
+                    <td>Tragedy</td>
+                    <td>Not Available</td>
+
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>
+                       <div class="author">
+                         <a href="https://www.thegreatestbooks.org/items/215">The Brothers Karamazov</a>
+                       </div>
+                       <br>
+                       <table>
+                        <tr><td>Publication Date: 2010</td></tr>
+                        <tr><td>page count: 418</td></tr>
+                        <tr><td>ISBN:265A-124938</td></tr>
+                    </table>
+                    </td>
+                    <td>Fyodor Dostoyevsky</td>
+                    <td>Novel</td>
+                    <td>Available</td>
+
+                </tr>
+             </tbody>
+           </table>
+        </div>
+        <div class="form">
+            <form action="/action_page.php">
+               <h1 class="h2">Register</h1>
+                <label for="first_name"><b>First Name :</b></label>
+                <br>
+                <input required type="text" id="first_name" placeholder="first name">
+                <br>
+                <label for="last_name"><b>Last Name :</b></label>
+                <br>
+                <input required type="text" id="last_name" placeholder="Last name">
+                <br>
+                <label for="date"><b>date Of Birth :</b></label>
+                <br>
+                <input required type="date" id="date">
+                <br>
+                <label for="age"><b>Age :</b></label>
+                <br>
+                <input required type="text" id="age" placeholder="age">
+                <br>
+                <label for="email"><b>Email :</b></label>
+                <br>
+                <input required type="email" id="email" placeholder="@email">
+                <br>
+                <label for="password"><b>Password :</b></label>
+                <br>
+                <input id="password" name="password" type="password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must have at least 6 characters' : ''); if(this.checkValidity()) form.password_two.pattern = this.value;" placeholder="Password" required>
+                <br>
+                <label for="password_two"><b>Conform Password :</b></label>
+                <input id="password_two" name="password_two" type="password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Please enter the same Password as above' : '');" placeholder="Verify Password" required>
+                
+                <br>
+                <input type="submit" Value="Register">
+
+            </form>
+        </div>
+    </main>
+</body>
+</html>
